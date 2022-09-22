@@ -1,0 +1,9 @@
+import pyautogui as pg
+from time import sleep
+
+pg.hotkey('alt', 'tab')
+sleep(0.5)
+pg.moveTo(1499, pg.position()[1])
+while pg.position()[0] <= 1500:
+    pg.hotkey('space')
+    sleep(0.157)
